@@ -34,19 +34,7 @@
 </p>
 
 <th:block th:replace="~{component/header :: siteHeader}"></th:block>
-
-<div id="breadcrumb">
-  <div class="container">
-    <nav>
-      <ul>
-        <li>홈</li>
-        <li>소식</li>
-        <li aria-current="page">지자체별 서비스 안내</li>
-      </ul>
-    </nav>
-  </div>
-</div>
-
+<th:block th:replace="~{component/breadcrumb :: siteBreadcrumb(${breadcrumb})}"></th:block>
 <main id="contents">
   <section class="section">
     <div class="container">

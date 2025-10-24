@@ -35,22 +35,7 @@
 
 <!-- 헤더에 header-jn 클래스 추가할 것 -->
 <th:block th:replace="~{component/header :: siteHeader}"></th:block>
-
-<div class="mypage-nav">
-  <div class="container fluid">
-    <nav>
-      <ul>
-        <li><a href="#">개명처리</a></li>
-        <li><a href="#">나의지자체</a></li>
-        <li><a href="#">지원금 신청결과</a></li>
-        <li ><a href="#" >지원금 내역 조회</a></li>
-        <li><a href="#">이용내역 조회</a></li>
-        <li><a href="#" >카드관리</a></li>
-        <li class="active"><a href="#" aria-current="page">계좌관리</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
+<th:block th:replace="~{page/side_mypage/mypage-nav :: mypageNav}"></th:block>
 
 <main id="contents">
   <section class="section">
@@ -309,7 +294,7 @@
   </section>
 </main>
 
-<th:block th:replace="~{component/footer :: siteFooter}"></th:block>
+<th:block th:replace="~{component/footer_jn :: siteFooterJn}"></th:block>
 <th:block th:replace="~{component/topBtn :: siteTop}"></th:block>
 
 <script th:src="@{/js/vendor/aos.js}"></script>

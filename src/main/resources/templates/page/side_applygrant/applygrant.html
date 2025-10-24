@@ -36,16 +36,7 @@
 <!-- 헤더에 header-jn 클래스 추가할 것 -->
 <th:block th:replace="~{component/header :: siteHeader}"></th:block>
 
-<div id="breadcrumb">
-  <div class="container">
-    <nav>
-      <ul>
-        <li>홈</li>
-        <li aria-current="page">지원금 신청</li>
-      </ul>
-    </nav>
-  </div>
-</div>
+<th:block th:replace="~{component/breadcrumb :: siteBreadcrumb(${breadcrumb})}"></th:block>
 
 <main id="contents">
   <section class="section">
@@ -147,7 +138,7 @@
   </section>
 </main>
 
-<th:block th:replace="~{component/footer :: siteFooter}"></th:block>
+<th:block th:replace="~{component/footer :: siteFooterJn}"></th:block>
 <th:block th:replace="~{component/topBtn :: siteTop}"></th:block>
 
 <script th:src="@{/js/vendor/aos.js}"></script>

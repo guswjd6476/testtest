@@ -35,18 +35,8 @@
 
 <th:block th:replace="~{component/header :: siteHeader}"></th:block>
 
-<div id="breadcrumb">
-  <div class="container">
-    <nav>
-      <ul>
-        <li>홈</li>
-        <li>이용안내</li>
-        <li aria-current="page">지원금 신청 및 지급 안내</li>
-      </ul>
-    </nav>
-  </div>
-</div>
 
+<th:block th:replace="~{component/breadcrumb :: siteBreadcrumb(${breadcrumb})}"></th:block>
 <main id="contents">
   <section class="section">
     <div class="container">
